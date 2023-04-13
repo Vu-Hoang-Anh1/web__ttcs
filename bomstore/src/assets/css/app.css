@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --color-background:#131921;
+    --color-writing: #fff;
+}
+
+body {
+	font-family: Arial, sans-serif;
+}
+
+/* Header */
+
+.header-top{
+    background-color: var(--color-background);
+    color: var(--color-writing);
+}
+.header-top .text-white{
+    text-align: center;
+}
+
+.header-top a{
+	text-decoration: none;
+}

@@ -11,17 +11,8 @@
 body {
 	font-family: Arial, sans-serif;
 }
-
-/* Header */
-
-.header-top{
-    background-color: var(--color-background);
-    color: var(--color-writing);
-}
-.header-top .text-white{
-    text-align: center;
-}
-
-.header-top a{
-	text-decoration: none;
-}
+.outer-row {
+    background: #ffffff;
+    -webkit-box-shadow: 4px 0 2px #dad5d5, -4px 0 2px #dad5d5;
+            box-shadow: 4px 0 2px #dad5d5, -4px 0 2px #dad5d5;
+  }

@@ -1,0 +1,341 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i");
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:root{
+  --color-background:#131921;
+  --color-writing: black;
+  --color-f4f4f4:#1e1e1e;
+  --color-f36b63: #f36b63;
+}
+
+
+html, body {
+  height: 100%;
+}
+.page{
+  background-color: #f4f4f4;
+
+
+}
+.row {
+  --bs-gutter-x: 30px;
+}
+body {
+    background-color: #f4f4f4;
+    line-height: 18px;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: normal;
+    visibility: visible;
+    font-family: "Open Sans", sans-serif;
+    color: #777777;
+    overflow-x: hidden;
+}
+
+
+
+/*header-top-nav  */
+.header-top-nav {
+  padding: 5px 0;
+}
+
+
+/*----------  language currency change style   ----------*/
+select {
+  border: none;
+}
+
+/* end header top nav */
+
+
+
+/* header-content */
+
+.header-content a{
+	text-decoration: none;
+  color: var(--color-writing);
+}
+.header-content a:hover{
+  color: var(--color-f36b63);
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .logo {
+    margin-top: 25px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .logo {
+    text-align: center;
+  }
+}
+/* header search */
+
+.header-search-bar {
+    border: 3px solid #ddd;
+    width: 100%;
+    margin-top: 25px;
+  }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .header-search-bar {
+      margin-top: 35px;
+    }
+  }
+  .header-search-bar input,
+  .header-search-bar button {
+    background: none;
+    border: none;
+  }
+  .header-search-bar select {
+    background-color: #395562;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    width: 30%;
+    cursor: pointer;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .header-search-bar select option {
+    background-color: #ffffff;
+    color: #333;
+  }
+  .header-search-bar select:hover {
+    background-color: var(--color-f36b63);
+  }
+  .header-search-bar .input-group-append {
+    width: 70%;
+    position: relative;
+  }
+  .header-search-bar .input-group-append input[type=search] {
+    padding-left: 15px;
+    width: 85%;
+  }
+  .header-search-bar .input-group-append button {
+    width: 15%;
+    background-color: #395562;
+    color: #ffffff;
+    position: absolute;
+    right: 0;
+    height: 100%;
+  }
+  .header-search-bar .input-group-append button:hover {
+    background-color: var(--color-f36b63);
+  }
+
+  /* user start */
+  .shopping-cart-user{
+    padding-right: 15px;
+  }
+  .shopping-cart-user:hover{
+    color: var(--color-f36b63);
+    cursor: pointer;
+  }
+
+  .shopping-cart {
+    margin-top: 25px;
+    position: relative;
+  }
+  .shopping-cart .cart-icon {
+    margin-right: 1rem;
+    margin-top: 5px;
+  }
+  .shopping-cart .cart-icon .shopping-cart-icon{
+    color: #395562;
+  }
+  .shopping-cart .cart-content {
+    position: relative;
+  }
+
+  .shopping-cart .cart-content h2 {
+    font-size: 14px;
+    color: #333;
+    line-height: 20px;
+    margin-bottom: 0;
+    font-weight: 900;
+  }
+  .shopping-cart .cart-content h2 span {
+    display: block;
+    font-size: 13px;
+    font-weight: 400;
+  }
+  .shopping-cart .cart-floating-box {
+    position: absolute;
+    top: 80px;
+    z-index: 999999;
+    right: 0;
+    width: 270px;
+    background-color: #ffffff;
+    padding: 20px;
+    -webkit-box-shadow: 0 0 10px #ddd;
+            box-shadow: 0 0 10px #ddd;
+    display: none;
+  }
+
+  .shopping-cart .cart-floating-box .cart-float-single-item {
+    position: relative;
+    height: 91px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+  }
+  .shopping-cart .cart-floating-box .cart-float-single-item:last-child {
+    border-bottom: none;
+  }
+  .shopping-cart .cart-floating-box .cart-float-single-item span.remove-item {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 20px;
+  }
+
+  .shopping-cart .cart-floating-box .cart-float-single-item .cart-float-single-item-image {
+    width: 35%;
+    border: 1px solid #ddd;
+    margin-right: 10px;
+  }
+  .shopping-cart .cart-floating-box .cart-float-single-item .cart-float-single-item-desc p {
+    margin-bottom: 5px;
+  }
+  .shopping-cart .cart-floating-box .cart-float-single-item .cart-float-single-item-desc p.product-title a {
+    font-weight: 600;
+    color: #333;
+  }
+  .shopping-cart .cart-floating-box .cart-float-single-item .cart-float-single-item-desc p.product-title a:hover {
+    color: #f36b63;
+  }
+  .shopping-cart .cart-floating-box .cart-calculation .calculation-details {
+    width: 55%;
+  }
+  .shopping-cart .cart-floating-box .cart-calculation .calculation-details p {
+    color: #333;
+    font-size: 15px;
+  }
+  .shopping-cart .cart-floating-box .cart-calculation .calculation-details p.shipping {
+    border-bottom: 1px solid #333;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+  }
+  .shopping-cart .cart-floating-box .cart-calculation .checkout-button a {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 15px;
+    display: inline-block;
+    margin-top: 25px;
+    margin-left: 25px;
+    font-weight: 600;
+    border-radius: 3px;
+  }
+
+  .shopping-cart .cart-floating-box .cart-calculation .checkout-button a:hover {
+    background-color: #f36b63;
+  }
+
+  .navigation-container {
+    color: #ccc;
+    background-color: #000000;
+    padding: 15px 0 15px 15px;
+
+
+
+    /*----------  Header navigation text  ----------*/
+    /*----------  Main menu  ----------*/
+    /*----------  Sub menu  ----------*/
+    /*----------  Mega menu  ----------*/
+    /*----------  Mobile menu  ----------*/
+  }
+  
+  .navigation-container p {
+    border-right: 1px solid #ccc;
+  }
+  .navigation-container .main-menu nav > ul li{
+    list-style: none;
+
+  }
+  .navigation-container .main-menu nav > ul > li {
+    display: block;
+    float: left;
+    margin-right: 40px;
+    position: relative;
+  }
+  .navigation-container .main-menu nav ul li a {
+    text-decoration: none;
+  }
+  .navigation-container .main-menu nav > ul > li > a {
+    color: #ccc;
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .navigation-container .main-menu nav > ul > li.menu-item-has-children > a::after {
+    font-family: Fontawesome;
+    content: "";
+    margin-left: 5px;
+    float: right;
+  }
+  .navigation-container .main-menu nav > ul  > a, .navigation-container .main-menu nav > ul > li:hover > a {
+    color: #ffffff;
+  }
+  .navigation-container .main-menu nav > ul > li:hover > .sub-menu, .navigation-container .main-menu nav > ul > li:hover > .mega-menu {
+    opacity: 1;
+    visibility: visible;
+    margin-top: 0;
+    z-index: 999;
+  }
+  .navigation-container .sub-menu {
+    position: absolute;
+    left: -20px;
+    top: 150%;
+    background-color: #ffffff;
+    -webkit-box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+    border-top: 3px solid #f36b63;
+    z-index: -999;
+    width: 250px;
+    padding: 15px 0;
+    margin-top: 30px;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+  }
+  .navigation-container .sub-menu li {
+    position: relative;
+  }
+  .navigation-container .sub-menu li a {
+    line-height: 24px;
+    padding: 6px 20px;
+    display: block;
+    font-weight: 400;
+    color: #444444;
+    text-transform: capitalize;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .navigation-container .sub-menu li.menu-item-has-children > a::after {
+    content: "";
+    margin-left: 5px;
+    float: right;
+  }
+  .navigation-container .sub-menu li.active > a, .navigation-container .sub-menu li:hover > a {
+    color: #202020;
+    font-weight: 600;
+  }
+  .navigation-container .sub-menu .sub-menu {
+  left: 100%;
+  right: auto;
+  top: 0;
+}
+.navigation-container .sub-menu .sub-menu .sub-menu {
+  left: auto;
+  right: 100%;
+}
+.navigation-container .sub-menu .sub-menu .sub-menu .sub-menu {
+  left: 100%;
+  right: auto;
+}
+.navigation-container .sub-menu .sub-menu .sub-menu .sub-menu {
+  left: auto;
+  right: 100%;
+}

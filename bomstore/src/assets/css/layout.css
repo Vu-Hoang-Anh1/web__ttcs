@@ -3,12 +3,19 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
+.mb-20{
+  margin-bottom: 20px;
+}
+.mt-10{
+  margin-top: 10px;
+}
 
 html, body {
   height: 100%;
 }
 .page{
   background-color: #f4f4f4;
+  color: #777777;
 }
 
 

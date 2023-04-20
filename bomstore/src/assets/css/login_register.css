@@ -1,0 +1,61 @@
+
+.account-area {
+  margin-bottom: 50px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.account-area .login-title {
+  font-size: 20px;
+  line-height: 23px;
+  text-transform: capitalize;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.account-area .login-form{
+  border: 1px solid #ddd;
+  padding: 30px;
+}
+.account-area .login-form label {
+  font-size: 14px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  font-weight: 600;
+  text-transform: capitalize;
+  padding-left: 10px;
+}
+
+.account-area .login-form input {
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid #999999;
+  line-height: 23px;
+  padding: 10px 20px;
+  font-size: 14px;
+  color: #444444;
+  margin-bottom: 15px;
+}
+.account-area button{
+  border: 1px solid #999999;
+  background-color: #444444;
+  line-height: 23px;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 15px;
+
+}
+.account-area button:hover{
+  background-color: #f36b63;
+
+}
+.account-area .login-form input[type=checkbox] {
+  width: auto;
+}
+.account-area a {
+  width: 100%;
+  color: inherit;
+  line-height: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}

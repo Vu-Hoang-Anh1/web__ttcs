@@ -3,7 +3,6 @@ import '../assets/css/header.css';
 import logo from '../assets/img/z4270514755923_918792fdd8c1aca1f5bae9b037e632ff.jpg';
 import nikeForce from '../assets/img/Nike Air Force.jpg';
 import adisdasStart from '../assets/img/adidas start.jpg';
-
 import { NavLink , Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { 
@@ -231,7 +230,7 @@ const Header = (props) => {
 													<li><a href="">wishlist wide</a></li>
 													<li><a href="">My account</a></li>
 													<li><a href="">My account wide</a></li>
-													<li><a href="">Login register</a></li>
+													<li><Link to="/Login_register">Login register</Link></li>
 													<li><a href="">Login register wide</a></li>
 												</ul>
 
@@ -242,7 +241,7 @@ const Header = (props) => {
 											<li><a href="">About</a></li>
 
 											
-											<li><a href="">Contact</a></li>
+											<li><Link to = "/Contact">Contact</Link></li>
 											
 										</ul>
 									

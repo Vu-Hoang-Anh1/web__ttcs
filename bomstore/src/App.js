@@ -5,6 +5,8 @@ import Layout from "./pages/layout";
 import Home from "./pages/home";
 import Footer from "./pages/footer";
 import About from "./pages/about";
+import Contact from "./pages/contact";
+import Login_register from './pages/login_register';
 function App() {
   return(
     <>
@@ -14,9 +16,11 @@ function App() {
           <Route path="/" element={<Layout/>}>
             <Route index element = {<Home/>}/>
           </Route>
-          <Route path="/about" element = {<About />}>
+          <Route path="/Login_register" element={<Login_register/>} />
+          <Route path="/Contact" element={<Contact/>} />
+          <Route path="/about" element = {<About />}/>
             
-          </Route>
+          
 
         </Routes>
       </BrowserRouter>

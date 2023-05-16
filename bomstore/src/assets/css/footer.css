@@ -1,15 +1,65 @@
 :root{
     --color-232f3e:#232f3e;
 }
-footer {
+.footer-nav{
+  padding: 20px;
+}
+.footer-nav-top {
     background-color: var(--color-232f3e);
-  }
+}
   
-  footer:not(:first-child) {
+/* footer:not(:first-child) {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
-  }
-  footer .input-group-text {
+} */
+
+footer .input-group-text {
     background-color: var(--color-232f3e);
     color: white;
     padding: 8px 17px;
-  }
+}
+footer button:hover{
+  background-color: #f36b63;
+}
+footer a{
+  line-height: inherit;
+  text-decoration: none;
+  color: #777777;
+  cursor: pointer;
+
+}
+footer a:hover {
+  color: #f36b63;
+}
+.copyright-section{
+  padding: 10px 0;
+  border-top: 3px solid #f4f4f4;
+}
+footer h4.block-title, .block-title h4 {
+  font-size: 14px;
+  font-weight: 800;
+  position: relative;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+  line-height: 14px;
+}
+footer h4.block-title:after, .block-title h4:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100px;
+  height: 3px;
+  background: #f36b63;
+  content: "";
+}
+footer h4.block-title:before, .block-title h4:before {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: #f4f4f4;
+  content: "";
+}
+.footer-link{
+  padding-left: 10px;
+}

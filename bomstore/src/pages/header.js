@@ -9,20 +9,21 @@ import {
   faMagnifyingGlass,
   faCartShopping,
   faHeart,
-  faUser
+  faUser,
+  faChevronDown
 } from '@fortawesome/free-solid-svg-icons'
 const Header = (props) => {
   return (
     <>
 			<header>
 			{/* header top nav */}
-				<div class="header-top-nav">
-							<div class="container">
+				<div className="header-top-nav">
+							<div className="container">
 							
-								<div class="row">
+								<div className="row">
 									{/* change-select */}
-									<div class="col-lg-3 offset-lg-9 col-md-12 col-sm-12">
-										<div class="user-change d-flex justify-content-lg-evenly">
+									<div className="col-lg-3 offset-lg-9 col-md-12 col-sm-12">
+										<div className="user-change d-flex justify-content-lg-evenly">
 											<div className='change-language'>
 												<select name="language" id="language">
 													<option value="">Tiếng Việt</option>
@@ -65,7 +66,7 @@ const Header = (props) => {
 											<div className="col-lg-2 col-md-4 offset-lg-0 text-md-start text-sm-center">
 												
 												<div className="logo">
-												<a href="#"><img width="167" height="69" src={logo} className="img-fluid" alt="logo"/></a>
+												<Link to= "/"><img width="167" height="69" src={logo} className="img-fluid" alt="logo"/></Link>
 
 												</div>     
 												
@@ -101,33 +102,33 @@ const Header = (props) => {
 												<div className="shopping-cart float-lg-end d-flex justify-content-start " id="shopping-cart">
 													<div className='shopping-cart-user d-flex align-items-center'>
 														<div className="cart-icon p-lg-2 m-0">
-															<a href="#"><i className="shopping-cart-icon img-fluid"><FontAwesomeIcon icon={faHeart} /></i></a>
+															<Link to = ""><i className="shopping-cart-icon img-fluid"><FontAwesomeIcon icon={faHeart} /></i></Link>
 
 														</div>
 														<div className="cart-content">
-															<h2 className='text-center'><a href="#">Yêu thích</a></h2>
+															<h2 className='text-center'><Link to = "">Yêu thích</Link></h2>
 														</div>
 
 													</div>
 
 													<div className='shopping-cart-user d-flex align-items-center'>
 														<div className="cart-icon p-lg-2 m-0">
-															<a href="#"><i className="shopping-cart-icon img-fluid"><FontAwesomeIcon icon={faUser} /></i></a>
+															<Link to = ""><i className="shopping-cart-icon img-fluid"><FontAwesomeIcon icon={faUser} /></i></Link>
 
 														</div>
 														<div className="cart-content">
-															<h2 className='text-center'><a href="#">Đăng nhập</a></h2>
+															<h2 className='text-center'><Link to="/Login_register">Đăng nhập</Link></h2>
 														</div>
 
 													</div>
 
 													<div className='shopping-cart-user d-flex align-items-center'>
 														<div className="cart-icon p-lg-2 m-0">
-															<a href="#"><i className="shopping-cart-icon img-fluid"><FontAwesomeIcon icon={faCartShopping} /></i></a>
+															<Link to = ""><i className="shopping-cart-icon img-fluid"><FontAwesomeIcon icon={faCartShopping} /></i></Link>
 
 														</div>
 														<div className="cart-content">
-															<h2 className='text-center'><a href="#">Giỏ hàng</a></h2>
+															<h2 className='text-center'><Link>Giỏ hàng</Link></h2>
 														</div>
 
 													</div>
@@ -136,28 +137,28 @@ const Header = (props) => {
 													<div className="cart-floating-box" id="cart-floating-box">
 														<div className="cart-items">
 															<div className="cart-float-single-item d-flex">
-																<span className="remove-item"><a href="#"><i className="fa fa-trash"></i></a></span>
+																<span className="remove-item"><Link to = ""><i className="fa fa-trash"></i></Link></span>
 																<div className="cart-float-single-item-image">
 																	<img width="250" height="250" src={nikeForce} className="img-fluid" alt=""/>
 
 																</div>
 																<div className="cart-float-single-item-desc">
-																	<p className="product-title"><span className="count">1x</span> <a
-																			href="">nikeForce</a></p>
-																	<p className="size"> <a href="">Trắng, 42</a></p>
+																	<p className="product-title"><span className="count">1x</span> <Link
+																			to = "">nikeForce</Link></p>
+																	<p className="size"> <Link to = "">Trắng, 42</Link></p>
 																	<p className="price">500,000 VNĐ</p>
 																</div>
 															</div>
 															<div className="cart-float-single-item d-flex">
-																<span className="remove-item"><a href="#"><i className="fa fa-trash"></i></a></span>
+																<span className="remove-item"><Link to = ""><i className="fa fa-trash"></i></Link></span>
 																<div className="cart-float-single-item-image">
 																<img width="250" height="250" src={adisdasStart} className="img-fluid" alt=""/>
 
 																</div>
 																<div className="cart-float-single-item-desc">
-																	<p className="product-title"><span className="count">1x</span> <a
-																			href="">adisdasStart</a></p>
-																	<p className="size"> <a href="">Đen, 42</a></p>
+																	<p className="product-title"><span className="count">1x</span> <Link
+																			to = "">adisdasStart</Link></p>
+																	<p className="size"> <Link to = "">Đen, 42</Link></p>
 																	<p className="price">400,000 VNĐ</p>
 																</div>
 															</div>
@@ -168,7 +169,7 @@ const Header = (props) => {
 																<p className="total">Total <span>900,000 VNĐ</span></p>
 															</div>
 															<div className="checkout-button">
-																<a href="checkout.html">Checkout</a>
+																<Link href="checkout.html">Checkout</Link>
 															</div>
 														</div>
 													</div>
@@ -189,20 +190,20 @@ const Header = (props) => {
 								{/* header menu left text */}
 									<p className='call-us-text'>Call us 24/7: (+84) 386777421</p>
 								</div>
-								<div className='col-lg-9 col-md-12'>
+								<div className='col-lg-8 col-md-12 '>
 								{/* main menu */}
 
-								<div className='main-menu'>
+								<div className='main-menu '>
 									<nav>
 										<ul>
-											<li class="active menu-item-has-children"><a href="#">Home</a>
+											<li className="active menu-item-has-children"><Link href="/">Home  <FontAwesomeIcon icon={faChevronDown} /></Link>
 
 											{/* change home*/}
 
-												<ul class="sub-menu">
-													<li class="active"><a href="#">Home One</a></li>
-													<li><a href="#">Home Two</a></li>
-													<li><a href="#">Home Three</a></li>
+												<ul className="sub-menu">
+													<li className="active"><Link href="/">Home One</Link></li>
+													<li><Link to = "">Home Two</Link></li>
+													<li><Link to = "">Home Three</Link></li>
 												</ul>
 
 											</li>
@@ -211,34 +212,28 @@ const Header = (props) => {
 
 											{/* submenu */}
 
-											<li ><a href="#">Shop</a></li>
+											<li ><Link to = "">Shop</Link></li>
 
-											<li ><a href="#">Blog</a></li>
-											<li class="menu-item-has-children"><a href="#">Pages</a>
+											<li ><Link to = "/Blog">Blog</Link></li>
+											<li className="menu-item-has-children"><Link to = "">Pages  <FontAwesomeIcon icon={faChevronDown} /></Link>
 															{/* <!-- ======  Submenu block  ======= --> */}
 
-												<ul class="sub-menu">
-													<li><a href="">cart</a></li>
-													<li><a href="">cart wide</a></li>
-													<li><a href="">checkout</a></li>
-													<li><a href="">checkout wide</a></li>
-													<li><a href="">compare</a></li>
-													<li><a href="">compare wide</a></li>
-													<li><a href="">store</a></li>
-													<li><a href="">store wide</a></li>
-													<li><a href="">wishlist</a></li>
-													<li><a href="">wishlist wide</a></li>
-													<li><a href="">My account</a></li>
-													<li><a href="">My account wide</a></li>
+												<ul className="sub-menu">
+													<li><Link to = "">cart</Link></li>
+													<li><Link to = "">checkout</Link></li>
+													<li><Link to = "">compare</Link></li>
+													<li><Link to = "">store</Link></li>
+													<li><Link to = "">wishlist</Link></li>
+													<li><Link to = "/Login_register">My account</Link></li>
 													<li><Link to="/Login_register">Login register</Link></li>
-													<li><a href="">Login register wide</a></li>
+													<li><Link to = "/Login_register">Login register wide</Link></li>
 												</ul>
 
 															{/* <!-- ====  End of Submenu block  ==== --> */}
 											</li>
 
 
-											<li><a href="">About</a></li>
+											<li><Link to="/About">About</Link></li>
 
 											
 											<li><Link to = "/Contact">Contact</Link></li>

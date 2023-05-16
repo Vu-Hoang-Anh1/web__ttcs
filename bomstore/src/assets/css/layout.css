@@ -3,15 +3,28 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
+.row {
+  --bs-gutter-x: 30px;
+}
+
 .mb-20{
   margin-bottom: 20px;
 }
 .mt-10{
   margin-top: 10px;
 }
+.mb-40{
+  margin-bottom: 40px;
+}
 
 html, body {
   height: 100%;
+}
+@media (min-width: 1400px){
+  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+      max-width: 1320px;
+  }
+
 }
 .page{
   background-color: #f4f4f4;

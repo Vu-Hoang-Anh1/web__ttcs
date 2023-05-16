@@ -1,9 +1,41 @@
 
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i");
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@media (min-width: 1400px){
+  .container {
+      max-width: 1320px;
+  }
+
+}
+body {
+    
+  background-color: #f4f4f4;
+  color: #777777;
+  line-height: 18px;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: normal;
+  visibility: visible;
+  font-family: "Open Sans", sans-serif;
+  color: #777777;
+  overflow-x: hidden;
+}
+
+
 .account-area {
+  padding: 50px 20px 50px 20px;
   margin-bottom: 50px;
   margin-right: 20px;
   margin-left: 20px;
+  background: #ffffff;
+  -webkit-box-shadow: 4px 0 2px #dad5d5, -4px 0 2px #dad5d5;
+          box-shadow: 4px 0 2px #dad5d5, -4px 0 2px #dad5d5;
 }
+
 .account-area .login-title {
   font-size: 20px;
   line-height: 23px;

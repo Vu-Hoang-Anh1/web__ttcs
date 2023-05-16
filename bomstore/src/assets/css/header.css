@@ -234,16 +234,9 @@ select {
 
   .navigation-container {
     color: #ccc;
-    background-color: #000000;
+    background-color: black;
     padding: 15px 0 15px 15px;
-
-
-
-    /*----------  Header navigation text  ----------*/
-    /*----------  Main menu  ----------*/
-    /*----------  Sub menu  ----------*/
-    /*----------  Mega menu  ----------*/
-    /*----------  Mobile menu  ----------*/
+    margin: 15px;
   }
   
   .navigation-container p {
@@ -267,12 +260,6 @@ select {
     display: block;
     font-size: 14px;
     font-weight: 600;
-  }
-  .navigation-container .main-menu nav > ul > li.menu-item-has-children > a::after {
-    font-family: Fontawesome;
-    content: "";
-    margin-left: 5px;
-    float: right;
   }
   .navigation-container .main-menu nav > ul  > a, .navigation-container .main-menu nav > ul > li:hover > a {
     color: #ffffff;

@@ -2,6 +2,7 @@ import React from "react";
 import { Outlet } from "react-router-dom";
 import Header from "./header";
 import Footer from "./footer";
+import Image from "./image";
 import '../assets/css/layout.css';
 const Layout = () =>{
     return(
@@ -12,6 +13,7 @@ const Layout = () =>{
                     <div className="col-md-12">
                         <Header/>
                         <Outlet/>
+                        <Image/>
                         <Footer/>
 
                     </div>

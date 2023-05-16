@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i");
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+@media (min-width: 1400px){
+  .container {
+      max-width: 1320px;
+  }
+
+}
+body {   
+  background-color: #f4f4f4;
+  color: #777777;
+  line-height: 18px;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: normal;
+  visibility: visible;
+  font-family: "Open Sans", sans-serif;
+  color: #777777;
+  overflow-x: hidden;
+}
+
+
+.blog-section {
+    padding: 50px 20px 50px 20px;
+    margin-bottom: 50px;
+    margin-right: 20px;
+    margin-left: 20px;
+    background: #ffffff;
+    -webkit-box-shadow: 4px 0 2px #dad5d5, -4px 0 2px #dad5d5;
+            box-shadow: 4px 0 2px #dad5d5, -4px 0 2px #dad5d5;
+}
+.rossi-blog {
+  -webkit-box-shadow: 0 3px 15px rgba(0, 0, 0, 0.07);
+          box-shadow: 0 3px 15px rgba(0, 0, 0, 0.07);
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.rossi-blog:hover {
+  -webkit-box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
+}
+.rossi-blog {
+  -webkit-box-shadow: 0 3px 15px rgba(0, 0, 0, 0.07);
+          box-shadow: 0 3px 15px rgba(0, 0, 0, 0.07);
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.rossi-blog:hover {
+  -webkit-box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
+}
+.rossi-blog .image {
+  display: block;
+}
+.rossi-blog .image img {
+  width: 100%;
+}
+.rossi-blog .content {
+  padding: 25px 30px 30px;
+  overflow: hidden;
+}
+.rossi-blog .content h3 {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 600;
+}
+.rossi-blog .content h3 a {
+  color: #444444;
+}
+.rossi-blog .content h3 a:hover {
+  color: #f36b63;
+}
+@media only screen and (max-width: 767px) {
+  .rossi-blog .content h3 {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+.rossi-blog .content h4 {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 600;
+}
+.rossi-blog .content h4 a {
+  color: #444444;
+  text-decoration: none;
+}
+.rossi-blog .content h4 a:hover {
+  color: #202020;
+}
+.rossi-blog .content ul {
+  float: left;
+  width: 100%;
+  list-style-type: none;
+}
+.rossi-blog .content ul li {
+  float: left;
+  margin-right: 14px;
+  position: relative;
+  line-height: 18px;
+}
+.rossi-blog .content ul li::before {
+  position: absolute;
+  right: -9px;
+  top: 50%;
+  width: 4px;
+  height: 1px;
+  content: "";
+  background-color: #7b7b7b;
+}
+.rossi-blog .content ul li:last-child {
+  margin-right: 0;
+}
+.rossi-blog .content ul li:last-child::before {
+  display: none;
+}
+.rossi-blog .content ul li a {
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  color: #444444;
+  line-height: 18px;
+  text-decoration: none;
+}
+.rossi-blog .content ul li a:hover {
+  color: #202020;
+}
+.rossi-blog .content p {
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 0;
+  margin-top: 15px;
+  display: block;
+  float: left;
+  width: 100%;
+}
+.blog-section .pagination{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.blog-section .pagination li a{
+  margin: 5px;
+  color: #202020;
+  text-decoration: none;
+
+}

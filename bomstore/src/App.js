@@ -17,12 +17,12 @@ function App() {
         <Routes>
           <Route path="/" element={<Layout/>}>
             <Route index element = {<Home/>}/>
-          </Route>
           <Route path="/Login_register" element={<Login_register/>} />
           <Route path="/Contact" element={<Contact/>} />
           <Route path="/About" element = {<About />}/>
           <Route path="/Blog" element = {<Blog />}/>
 
+          </Route>
             
         </Routes>
       </BrowserRouter>

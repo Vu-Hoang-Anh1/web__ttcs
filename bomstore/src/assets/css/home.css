@@ -408,7 +408,7 @@
 
 
 /*----------   Horizontal product slider  ----------*/
-.horizontal-product-slider {
+/* .horizontal-product-slider {
   position: relative;
 }
 @media (min-width: 1400px) {
@@ -416,7 +416,7 @@
     display: flex;
   }
   
-}
+} */
 
 .block-title h2{
   font-size: 14px;
@@ -681,4 +681,15 @@
   color: #202020;
   text-decoration: none;
 
+}
+
+.slick-dots {
+  position: absolute;
+  bottom: -17px;
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
 }

@@ -1,14 +1,13 @@
 import React from "react";
 import "./assets/css/app.css";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Layout from "./pages/layout";
-import Home from "./pages/home";
-import Header from "./pages/header";
-import Footer from "./pages/footer";
-import About from "./pages/about";
-import Contact from "./pages/contact";
-import Login_register from './pages/login_register';
-import Blog from "./pages/blog";
+import Layout from "./layout/defaultLayout/layout";
+import Home from "./pages/home/home";
+import About from "./pages/about/about";
+import Contact from "./pages/contact/contact";
+import Login_register from './pages/login_register/login_register';
+import Blog from "./pages/blog/blog";
+import Details from "./pages/detail/detail";
 function App() {
   return(
     <>
@@ -21,7 +20,7 @@ function App() {
           <Route path="/Contact" element={<Contact/>} />
           <Route path="/About" element = {<About />}/>
           <Route path="/Blog" element = {<Blog />}/>
-
+          <Route path="/products/:productId" element = {<Details/>}/>
           </Route>
             
         </Routes>

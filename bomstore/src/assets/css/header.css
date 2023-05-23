@@ -109,6 +109,8 @@ select {
     position: relative;
   }
   .header-search-bar .input-group-append input[type=search] {
+    line-height: 42px;
+    outline: none;
     padding-left: 15px;
     width: 85%;
   }
@@ -240,6 +242,7 @@ select {
   }
   
   .navigation-container p {
+    margin: 0;
     border-right: 1px solid #ccc;
   }
   .navigation-container .main-menu nav > ul li{
